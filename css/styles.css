@@ -1,30 +1,31 @@
-body{
-  background-color: #000;
-  padding: 0;
-  margin:0;
+*{
   box-sizing: border-box;
+  padding: 0px;
+  margin:0px;
 }
 
-.sectionkitty{
+#sectionKitty{
   background-image: url("../assets/img/Landscape.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
+  background-size:100% 100%;
   display:flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-
+  flex-direction: row;
+  justify-content: center;
+  align-items:flex-end;
+  min-height: 100vh;
 }
 
-@media screen and (max-width:1024px){
- .sectionkitty{
+.imageKitty{
+  max-width:100%;
+}
+
+@media (max-width:1024px){
+ #sectionKitty{
     background-image: url("../assets/img/dawn.png");
   }
 }
 
-@media screen and (max-width:680px){
-  .ssectionkitty{
+@media (max-width:680px){
+  #sectionKitty{
     background-image: url("../assets/img/maxresdefault.jpg");
   }
 }
